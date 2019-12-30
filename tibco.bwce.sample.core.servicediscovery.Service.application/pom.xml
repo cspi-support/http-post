@@ -11,13 +11,14 @@
   <artifactId>tibco.bwce.sample.core.servicediscovery.Service.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
-    <skipTests>false</skipTests>
-    <project.type>Docker</project.type>
-    <bw.Home></bw.Home>
-    <engineDebugPort>8090</engineDebugPort>
-    <docker.property.file>docker-dev.properties</docker.property.file>
-    <failIfNoTests>false</failIfNoTests>
     <tibco.Home></tibco.Home>
+    <engineDebugPort>8090</engineDebugPort>
+    <failIfNoTests>false</failIfNoTests>
+    <project.type>Docker</project.type>
+    <docker.property.file>docker-dev.properties</docker.property.file>
+    <skipTests>false</skipTests>
+    <bw.Home></bw.Home>
+    <k8s.property.file>k8s-dev.properties</k8s.property.file>
   </properties>
   <build>
     <plugins>
@@ -42,6 +43,7 @@
         <configuration>
           <files>
             <file>${docker.property.file}</file>
+            <file>${k8s.property.file}</file>
           </files>
         </configuration>
       </plugin>
@@ -77,6 +79,14 @@
               </run>
             </image>
           </images>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId>
+        <version>3.5.41</version>
+        <configuration>
+          <skip>false</skip>
         </configuration>
       </plugin>
     </plugins>
