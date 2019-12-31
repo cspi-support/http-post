@@ -11,14 +11,14 @@
   <artifactId>tibco.bwce.sample.core.servicediscovery.Service.application</artifactId>
   <packaging>bwear</packaging>
   <properties>
-    <tibco.Home></tibco.Home>
-    <engineDebugPort>8090</engineDebugPort>
-    <failIfNoTests>false</failIfNoTests>
-    <project.type>Docker</project.type>
-    <docker.property.file>docker-dev.properties</docker.property.file>
     <skipTests>false</skipTests>
     <bw.Home></bw.Home>
+    <project.type>Docker</project.type>
     <k8s.property.file>k8s-dev.properties</k8s.property.file>
+    <engineDebugPort>8090</engineDebugPort>
+    <docker.property.file>docker-dev.properties</docker.property.file>
+    <failIfNoTests>false</failIfNoTests>
+    <tibco.Home></tibco.Home>
   </properties>
   <build>
     <plugins>
