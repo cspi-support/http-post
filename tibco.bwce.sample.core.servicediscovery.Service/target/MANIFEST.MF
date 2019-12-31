@@ -1,4 +1,4 @@
-Manifest-Version: 1.0.0.201912311049
+Manifest-Version: 1.0.0.201912311122
 Bundle-SymbolicName: tibco.bwce.sample.core.servicediscovery.Service
 Bundle-ManifestVersion: 2
 TIBCO-BW-Edition: bwcf
@@ -12,7 +12,7 @@ TIBCO-BWCE-Edition-Target: docker
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-Version: 2.2.0 V15 2016-10-12
 Bundle-Name: Com Tibco Sample ServiceRegistry Module
-Bundle-Version: 1.0.0.201912311049
+Bundle-Version: 1.0.0.201912311122
 Bundle-ClassPath: .
 TIBCO-BW-ApplicationModule: META-INF/module.bwm
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
